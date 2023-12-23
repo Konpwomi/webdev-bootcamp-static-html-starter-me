@@ -8,22 +8,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="bg-wd-black">
-    <header class="h-[400px] w-full flex flex-col justify-center align-middle items-center text-cyan-300 gap-4 bg-hero-pattern bg-center bg-cover bg-no-repeat">
+    <header class="h-[400px] w-full flex flex-col justify-center align-middle items-center text-primary gap-4 bg-hero-pattern bg-center bg-cover bg-no-repeat">
       <h1 class="text-5xl font-bold text-center">WEB DEVELOPMENT <br/> BOOTCAMP</h1>
       <h2 class="text-[32px] font-medium">My Photo Gallery</h2>
     </header>
 
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
+    <main class="px-8 flex flex-col">
+
+      <div class="text-primary w-full text-4xl font-semibold flex items-center gap-10 my-12 before:content-[''] before:h-px before:bg-primary before:grow after:content-[''] after:h-px after:bg-primary after:grow">
+        Feature
+      </div>
+      <section class="flex flex-col items-center justify-center w-full text-white gap-6">
+        <div class="flex gap-6 justify-between w-full">
+          <img src="../assets/features/image-bootcamp-feature-1.png" alt="feature-image-1">
+          <div class="flex flex-col gap-4 bg-wd-darkgrey p-6 grow">
+            <h3 class="text-2xl font-semibold ">City Skyline</h3>
+            <p class="text-2xl font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae qui velit doloribus itaque ex labore, voluptas animi maxime sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, placeat voluptates delectus quisquam cum sit maxime ullam earum laboriosam. Iusto?</p>
+          </div>
+        </div>
+        <div class="flex gap-6 flex-row-reverse justify-between w-full">
+          <img src="../assets/features/image-bootcamp-feature-2.png" alt="feature-image-1">
+          <div class="flex flex-col gap-4 bg-wd-darkgrey p-6 grow">
+            <h3 class="text-2xl font-semibold ">Corporate Photo</h3>
+            <p class="text-2xl font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae qui velit doloribus itaque ex labore, voluptas animi maxime sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, placeat voluptates delectus quisquam cum sit maxime ullam earum laboriosam. Iusto?</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-primary w-full text-4xl font-semibold flex items-center gap-10 my-12 before:content-[''] before:h-px before:bg-primary before:grow after:content-[''] after:h-px after:bg-primary after:grow">
+        My Work
+      </div>
+      <section class="grid grid-cols-3 gap-6 justify-center w-full place-content-center">
+        <img class="w-full" src="../assets/grid/image-bootcamp-1.png" alt="">
+        <img class="w-full" src="../assets/grid/image-bootcamp-2.png" alt="">
+        <img class="w-full" src="../assets/grid/image-bootcamp-3.png" alt="">
+        <img class="w-full" src="../assets/grid/image-bootcamp-4.png" alt="">
+        <img class="w-full" src="../assets/grid/image-bootcamp-5.png" alt="">
+        <img class="w-full" src="../assets/grid/image-bootcamp-6.png" alt="">
+      </section>
+
+      <div class="text-primary w-full text-4xl font-semibold flex items-center gap-10 my-12 before:content-[''] before:h-px before:bg-primary before:grow after:content-[''] after:h-px after:bg-primary after:grow">
+        More Photos
+      </div>
+      <section class="flex flex-col items-center justify-center w-full text-white gap-6">
+        <div class="w-full overflow-hidden relative">
+          <div class="w-full h-[400px]">
+            <img class="w-full h-full object-cover my-slides" src="../assets/slider/slide1.jpg" alt="">
+            <img class="w-full h-full object-cover my-slides" src="../assets/slider/slide2.jpg" alt="">
+            <img class="w-full h-full object-cover my-slides" src="../assets/slider/slide3.jpg" alt="">
+            <img class="w-full h-full object-cover my-slides" src="../assets/slider/slide4.jpg" alt="">
+          </div>
+          <a class="text-white absolute top-[45%] left-3 cursor-pointer" onclick="increaseSlideNumber(-1)"><i class="fa-solid fa-chevron-left fa-2xl"></i></a>
+          <a class="text-white absolute top-[45%] right-3 cursor-pointer" onclick="increaseSlideNumber(1)"><i class="fa-solid fa-chevron-right fa-2xl"></i></a>
+        </div>
+        <div class="flex justify-center items-center w-full gap-3 mt-6">
+          <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick = "showSlide(0)"></div>
+          <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick = "showSlide(1)"></div>
+          <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick = "showSlide(2)"></div>
+          <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick = "showSlide(3)"></div>
+        </div>
+      </section>
+
     </main>
 
-    <footer>
-      <section></section>
-      <section></section>
+    <footer class="flex flex-col text-white justify-center w-full px-8">
+      <section class="flex justify-between">
+        <div class="flex flex-col gap-6 w-1/3">
+          <h3 class=" font-bold text-[32px]">Patiphan Arphorn</h3>
+          <p >Hello, beautiful passerby. I’m Jane Doe. A passionate photographer. I love to bla bla bla.... bla bla bla.... bla bla bla.... bla bla bla.... bla bla bla.... bla bla bla.... bla bla bla....
+            I’m available for hiring.</p>
+          <form onsubmit="onSubmit(event)" class="flex flex-col gap-4">
+            <input type="email" name="email" placeholder="Enter your email" class="py-[14px] pl-4 w-full text-wd-black">
+            <button type="submit" class="bg-primary text-[#010101] px-[33px] py-3 w-1/2">
+              Subscribe <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="flex flex-col gap-6 w-1/3">
+          <h3  class=" font-bold text-[32px]" >Get in touch</h3>
+          <p>MBK Tower 20th Floor, 444, Phaya Thai Rd, Wang Mai, Pathum Wan, Bangkok 10330</p>
+          <p>Email: Patiphan.arp@gmail.com</p>
+          <div class="flex gap-4">
+            <i class="fa-brands fa-facebook text-wd-brand fa-2xl"></i>
+            <i class="fa-brands fa-instagram text-wd-brand fa-2xl"></i>
+            <i class="fa-brands fa-x-twitter text-wd-brand fa-2xl"></i>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="text-center text-white font-bold border-t-2 border-primary py-12 mt-12">© 2023, Jane Doe. All Rights Reserved.</p>
+      </section>
     </footer>
+    <script>
+      function onSubmit(e) {
+        alert(`You ${e.target.elements.email.value} has been subcribed to mailing list`) 
+      };
+
+      let slideNumber = 0;
+      showSlide(slideNumber);
+
+      function increaseSlideNumber(n) {
+        slideNumber += n;
+        showSlide (slideNumber);
+      }
+
+      function showSlide(n) {
+        const imageSlides = document.getElementsByClassName('my-slides');
+        const dotNavs = document.getElementsByClassName('dot-nav');
+        if (n >= imageSlides.length){
+          slideNumber = 0;
+        } else if (n < 0) {
+          slideNumber = imageSlides.length -1;
+        } else {
+          slideNumber = n;
+        }
+
+        for (let i=0; i<imageSlides.length; i++) {
+          imageSlides[i].style.display = "None";
+          dotNavs[i].classList.remove("bg-primary");
+          dotNavs[i].classList.add("border-primary");
+          dotNavs[i].classList.add("border-[1px]");
+        }
+
+        imageSlides[slideNumber].style.display = "block"
+
+        dotNavs[slideNumber].classList.add("bg-primary");
+        dotNavs[slideNumber].classList.remove("border-primary");
+        dotNavs[slideNumber].classList.remove("border-[1px]");
+
+
+      } 
+    </script>
   </body>
 </html>
